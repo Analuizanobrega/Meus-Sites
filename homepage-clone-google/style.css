@@ -7,6 +7,14 @@
 *, input, button{
     font-family: Arial, sans-serif;
 }
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 
 .menu{
     height: 48px;
@@ -65,4 +73,78 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* main */
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 56px 8px 0;
+    align-items: center;
+}
+
+.content_logo{
+    height: 56px;
+}
+
+.content_search{
+    margin-top: 18px;
+    width: 100%;
+    max-width: 736px;
+    padding: 7px 10px 6px 20px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    background: transparent;
+    border-radius: 25px;
+    border: 1px solid #dadce0;
+    outline: 0;
+}
+
+.content_offer{
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 6px 12px;
+}
+
+.content_offer_link{
+    text-decoration: none;
+    color: #1967d2;
+}
+
+.footer{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.footer_section{
+    border-top: 1px solid #e4e4e4;
+    padding: 10px 12px;
+    font-size: 16px;
+    color:#5f6368;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #5f6368;
+    padding: 10px;
+}
+
+.footer_links a:not(:first-child){
+    margin-left: 27px;
+}
+
+@media (min-width: 763px) {
+    .content{
+        padding-top: 120px;
+    }
+    .content_logo{
+        height: 150px;
+    }
 }
